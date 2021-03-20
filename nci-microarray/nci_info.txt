@@ -1,0 +1,88 @@
+NCI60 {ISLR}	R Documentation
+NCI 60 Data
+
+Description: NCI microarray data. The data contains expression levels on 6830 genes from 64 cancer cell lines. Cancer type is also recorded. Missing values have been imputed via SVD.
+
+Format
+The format is a list containing two elements: data and labs. Data is a 64 by 6830 matrix of the expression values while labs is a vector listing the cancer types for the 64 cell lines.
+
+Source
+The data come from Ross et al. (Nat Genet., 2000). More information can be obtained at http://genome-www.stanford.edu/nci60/
+
+References
+James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013) An Introduction to Statistical Learning with applications in R, www.StatLearning.com, Springer-Verlag, New York
+
+Source and reference: http://genome-www.stanford.edu/nci60/
+
+Examples
+table(NCI60$labs)
+
+64 cell lines, labels are below
+Data can be read in R via commands:
+nci.data <- read.table(url("https://web.stanford.edu/~hastie/ElemStatLearn/datasets/nci.data.csv"), sep=",",row.names=1,header=TRUE)
+nci.label <-scan(url("https://web.stanford.edu/~hastie/ElemStatLearn/datasets/nci.label",what="")
+
+CNS          
+CNS        
+CNS        
+RENAL      
+BREAST    
+CNS       
+CNS       
+BREAST      
+NSCLC       
+NSCLC    
+RENAL         
+RENAL     
+RENAL       
+RENAL       
+RENAL       
+RENAL         
+RENAL        
+BREAST 
+NSCLC      
+RENAL       
+UNKNOWN    
+OVARIAN    
+MELANOMA
+PROSTATE   
+OVARIAN    
+OVARIAN  
+OVARIAN     
+OVARIAN    
+OVARIAN    
+PROSTATE   
+NSCLC        
+NSCLC        
+NSCLC     
+LEUKEMIA
+K562B-repro               
+K562A-repro               
+LEUKEMIA   
+LEUKEMIA  
+LEUKEMIA    
+LEUKEMIA  
+LEUKEMIA       
+COLON      
+COLON       
+COLON      
+COLON        
+COLON     
+COLON      
+COLON     
+MCF7A-repro               
+BREAST       
+MCF7D-repro               
+BREAST     
+NSCLC     
+NSCLC     
+NSCLC    
+MELANOMA 
+BREAST 
+BREAST      
+MELANOMA     
+MELANOMA
+MELANOMA  
+MELANOMA 
+MELANOMA  
+MELANOMA 
