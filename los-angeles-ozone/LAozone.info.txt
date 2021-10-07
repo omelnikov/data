@@ -8,7 +8,7 @@ is actually the log of the daily maximum of the hourly-average ozone
 concentrations in Upland, California.
 
 To read into R:
-LAozone = read.table("http://www-stat.stanford.edu/~tibs/ElemStatLearn/datasets/LAozone.data",sep=",",head=T)
+LAozone = read.table("https://raw.githubusercontent.com/omelnikov/data/main/los-angeles-ozone/LAozone.data",sep=",",head=T)
 
 Detailed variable names:
 
